@@ -114,7 +114,7 @@ body {
   .image::before {
     width: 500px;
     height: 500px;
-    background-image: url('.img/gwiazdki.png');
+    background-image: url('./img/gwiazdki.png');
   }
   .image::before, .image::after {
       content: "";

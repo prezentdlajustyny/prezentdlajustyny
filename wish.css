@@ -56,7 +56,7 @@ p {
 
 div::after {
     content: '';
-    background-image: url('/img/elements.png');
+    background-image: url('./img/elements.png');
     position: absolute;
     top: 120px;
     width: 700px;

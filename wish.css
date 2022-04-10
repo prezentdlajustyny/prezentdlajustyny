@@ -11,6 +11,7 @@ body {
     justify-content: center;
     height: calc(100vh - calc(100vh - 100%));
     overflow-x: hidden;
+    padding: 10px;
 }
 
 .wishing{
@@ -45,10 +46,10 @@ body {
 }
 
 div {
-    max-width: 400px;
    display: flex;
    flex-direction: column;
    align-items: center;
+   position: absolute
 }
 
 p {

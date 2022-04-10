@@ -56,12 +56,3 @@ p {
     text-align: center;
 }
 
-div::after {
-    content: '';
-    background-image: url('./img/elements.png');
-    position: absolute;
-    top: 120px;
-    width: 700px;
-    height: 467px;
-    z-index: -1;
-}

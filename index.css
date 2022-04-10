@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;500;600&family=Kanit:wght@400;500&display=swap');
+
+
+* {
+    font-family: 'Archivo', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    /* heigh    t: 300px; */
+  }
+
+  .container {
+
+      width: 100%;
+      height: 100%;
+  }
+
+  .artistContainer {
+
+      width: 100%;
+      height: 100%;
+  }
+
+.containerFull{
+    width: 100%;
+    height: 700px;
+    padding: 0 30px;
+}
+  .wrapper {
+      width: 100%;
+      height: 100vh;
+      background-color: navy;
+      
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+      /* border-radius: 16px; */
+      
+  
+  }
+  .wrapper.lilpeep {
+    background-image: url('/img/peep.jpg');
+  }
+
+  .wrapper.deys {
+    background-image: url('/img/deys.jpg');
+  }
+
+  .wrapper.fokus {
+    background-image: url('/img/fokus.jpg');
+  }
+
+  .wrapper.luc{
+    background-image: url('/img/luc.jpg');
+  }
+
+
+  .wrapper.bones{
+    background-image: url('/img/bones.jpg');
+  }
+
+  .wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.66);
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+  }
+
+  .content {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+  }
+  .image {
+      width: 250px;
+      height: 250px;
+      position: relative;
+  }
+
+  .image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+  }
+
+  .image::before {
+    width: 500px;
+    height: 500px;
+    background-image: url('img/gwiazdki.png');
+  }
+  .image::before, .image::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -100px;
+      left: -10px;
+
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      
+
+      z-index: -1;
+  }
+
+ 
+
+  .firstPanel {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-top: 80px;
+  }
+
+  .artistName, .artistRealName {
+
+      font-weight: 500;
+      font-size: 22px;
+      margin: 0;
+  }
+
+  .artistRealName {
+      font-weight: 200;
+      font-size: 18px;
+      margin-top: 10px;
+  }
+
+
+    .secondPanel {
+        margin-top: 40px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .line, .secondLine {
+      width: 100%;
+      height: 1px;
+      background-color: rgb(118, 118, 118);
+      position: absolute;
+      left: 0;
+  }
+
+  .secondLine {
+      width: 180px;
+      background-color: white;
+      height: 3px;
+      top: -1px;
+  }
+
+  .secondLine::after {
+      content: '';
+      display: block;
+      background-color: white;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      position: absolute;
+      right: -1px;
+      top: -2px;
+  }
+
+  .thirdPanel {
+      font-weight: 200;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 0 5px;
+  }
+
+  .fourthPanel {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    margin-top: 45px;
+  }
+
+  .play {
+      font-size: 60px;
+  }
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f04a";
+    color: white;
+  }
+
+
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f04e';
+    color: white;
+}
+
+.swiper-button-next, .swiper-button-prev,  .fourthPanel  {
+    top: auto;
+    bottom:165px;
+    
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 70px;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 70px;
+}
+
+.fa-solid.fa-heart {
+    font-size: 25px;
+    color: red;
+}
+
+.fa-regular.fa-circle-up {
+    font-size: 25px;
+    margin-left: 15px;
+}

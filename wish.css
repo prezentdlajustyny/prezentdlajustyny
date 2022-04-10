@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;500;600&family=Kanit:wght@400;500&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wishing{
+    background-color:#CC085D;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    
+}
+
+.wishing::before{
+    content: '';
+    display: flex;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #CC085D;
+    z-index: -1;
+}
+
+
+
+.wishing:hover {
+    background-color: #9f0749;
+}
+
+div {
+    max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+div::after {
+    content: '';
+    background-image: url('/img/elements.png');
+    position: absolute;
+    top: 120px;
+    width: 700px;
+    height: 467px;
+    z-index: -1;
+}
